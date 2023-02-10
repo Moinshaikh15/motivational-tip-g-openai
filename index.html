@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="App">
+        <h2>Generate Motivational Tips for Students</h2>
+        <img src="./images/bg.jpg" alt="" class="img" />
+        <div class="input-main">
+           
+            <div class="input-div">
+                <label htmlFor="">Number of days left in last semester:</label>
+                <input type="number" id="number-of-days" class="inpt" placeholder="Enter number of days here E.g. '25'"/>
+            </div>
+            <div class="input-div">
+                <label htmlFor="">Attendance Rate:</label>
+                <input type="number" id="attendance" class="inpt" placeholder="Enter attendance % here E.g. '90'"/>
+            </div>
+            <div class="input-div">
+                <label htmlFor="">Grade Level:</label>
+                <input type="number" id="grade" class="inpt" placeholder="Enter grade level here E.g. '3'"/>
+            </div>
+            <div class="courses">
+                <label htmlFor="">Enter Course and the Grades:</label>
+                <div class="input-div">
+                    <input type="text" id="course1-label" class="label-inpt" placeholder="Enter Course">
+                    <input type="text" id="course1-ans" class="inpt" placeholder="Enter Letter Grade E.g. 'B'"/>
+                </div>
+                <div class="input-div">
+                    <input type="text" id="course2-label" class="label-inpt" placeholder="Enter Course">
+                    <input type="text" id="course2-ans" class="inpt" placeholder="Enter Letter Grade E.g. 'B'"/>
+                </div>
+                <div class="input-div">
+                    <input type="text" id="course3-label" class="label-inpt" placeholder="Enter Course">
+                    <input type="text" id="course3-ans" class="inpt" placeholder="Enter Letter Grade E.g. 'B'"/>
+                </div>
+                <div class="input-div">
+                    <input type="text" id="course4-label" class="label-inpt" placeholder="Enter Course">
+                    <input type="text" id="course4-ans" class="inpt" placeholder="Enter Letter Grade E.g. 'B'"/>
+                </div>
+                <div class="input-div">
+                    <input type="text" id="course5-label" class="label-inpt" placeholder="Enter Course">
+                    <input type="text" id="course5-ans" class="inpt" placeholder="Enter Letter Grade E.g. 'B'"/>
+                </div>
+            </div>
+
+
+
+            <button onClick={getData()} class="get-btn">Get the Tip</button>
+        </div>
+
+        <div class="text-div">
+            <div class="loader"></div>
+            <h3 class="motivational-tip"></h3>
+            <button class="get-btn copy-btn" onclick="copyToClipboard()">Copy Tip</button>
+            <div class="copied">
+                <p>Copied</p>
+            </div>
+        </div>
+
+        
+<script src="main.js"></script>
+    </div>
+</body>
+
+</html>
